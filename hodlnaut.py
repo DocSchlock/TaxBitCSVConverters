@@ -20,9 +20,6 @@ print(input_sheet)
 #determine the currency type
 token_name = input_sheet.iat[0,-1].split(' ')[1]
 
-# remove the bad text from the interest column
-df = input_sheet.replace(token_name,inplace=False,regex=False)
-
 #remove the bad columns and insert blank columns and the hodlnaut column
 df = df.drop(['Delete1','Delete2'], axis=1)
 
