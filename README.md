@@ -7,6 +7,7 @@ Tested on **Python 3.10.1** - not guaranteed for any lower versions.
 
 + pandas
 + tkinter
++ pyarrow
 
 # Working on
 
