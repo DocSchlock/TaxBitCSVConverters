@@ -23,11 +23,12 @@ token_name = input_sheet.iat[0,-1].split(' ')[1]
 #remove the bad columns and insert blank columns and the hodlnaut column
 df = df.drop(['Delete1','Delete2'], axis=1)
 
-df.insert(2,"Receiving Destination",'Hodlnaut',False)
-df.insert(3,"Fee",'',False)
-df.insert(4,"Fee Currency",'',False)
-df.insert(5,"Exchange Transaction ID",'',False)
-df.insert(6,"Blockchain Transaction Hash",'',False)
+df.insert(2,"Received Currency",token_name,False)
+df.insert(3,"Receiving Destination",'Hodlnaut',False)
+df.insert(4,"Fee",'',False)
+df.insert(5,"Fee Currency",'',False)
+df.insert(6,"Exchange Transaction ID",'',False)
+df.insert(7,"Blockchain Transaction Hash",'',False)
 
 ## insert  the between columns
 df.insert(1,"Sending Source",'',False)
