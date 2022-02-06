@@ -1,9 +1,10 @@
 """
 Converts a PolkaDot staking extract to a TaxBit file
 """
-import pandas as pd
 import  tkinter as tk
 from tkinter import filedialog
+import pandas as pd
+
 
 # should support any given input for TaxBit
 
